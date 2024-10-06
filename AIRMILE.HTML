@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Mileage Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Air Mileage Calculator</h1>
+        <form id="mileage-form">
+            <div class="form-group">
+                <label for="departure">Departure Airport:</label>
+                <select id="departure" name="departure">
+                    <option value="LAX">Los Angeles (LAX)</option>
+                    <option value="JFK">New York (JFK)</option>
+                    <option value="ORD">Chicago (ORD)</option>
+                    <option value="DFW">Dallas (DFW)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination Airport:</label>
+                <select id="destination" name="destination">
+                    <option value="LAX">Los Angeles (LAX)</option>
+                    <option value="JFK">New York (JFK)</option>
+                    <option value="ORD">Chicago (ORD)</option>
+                    <option value="DFW">Dallas (DFW)</option>
+                </select>
+            </div>
+            <button type="button" id="calculate-button">Calculate Mileage</button>
+        </form>
+        <div id="result">
+            <h2>Total Distance: <span id="distance"></span> miles</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
